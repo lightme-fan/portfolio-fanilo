@@ -4,6 +4,7 @@ import ReactDOM from "react-dom"
 import { Router, navigate, Location, BaseContext } from "@reach/router"
 import { ScrollContext } from "gatsby-react-router-scroll"
 import domReady from "@mikaelkristiansson/domready"
+import { StaticQueryContext } from "gatsby"
 import {
   shouldUpdateScroll,
   init as navigationInit,
@@ -11,13 +12,19 @@ import {
 } from "./navigation"
 import emitter from "./emitter"
 import PageRenderer from "./page-renderer"
-import asyncRequires from "./async-requires"
-import { setLoader, ProdLoader, publicLoader } from "./loader"
+import asyncRequires from "$virtual/async-requires"
+import {
+  setLoader,
+  ProdLoader,
+  publicLoader,
+  PageResourceStatus,
+  getStaticQueryResults,
+} from "./loader"
 import EnsureResources from "./ensure-resources"
 import stripPrefix from "./strip-prefix"
 
 // Generated during bootstrap
-import matchPaths from "./match-paths.json"
+import matchPaths from "$virtual/match-paths.json"
 
 const loader = new ProdLoader(asyncRequires, matchPaths)
 setLoader(loader)
@@ -26,7 +33,6 @@ loader.setApiRunner(apiRunner)
 window.asyncRequires = asyncRequires
 window.___emitter = emitter
 window.___loader = publicLoader
-window.___webpackCompilationHash = window.webpackCompilationHash
 
 navigationInit()
 
@@ -56,11 +62,36 @@ apiRunnerAsync(`onClientEntry`).then(() => {
     </BaseContext.Provider>
   )
 
+  const DataContext = React.createContext({})
+
+  class GatsbyRoot extends React.Component {
+    render() {
+      const { children } = this.props
+      return (
+        <Location>
+          {({ location }) => (
+            <EnsureResources location={location}>
+              {({ pageResources, location }) => {
+                const staticQueryResults = getStaticQueryResults()
+                return (
+                  <StaticQueryContext.Provider value={staticQueryResults}>
+                    <DataContext.Provider value={{ pageResources, location }}>
+                      {children}
+                    </DataContext.Provider>
+                  </StaticQueryContext.Provider>
+                )
+              }}
+            </EnsureResources>
+          )}
+        </Location>
+      )
+    }
+  }
+
   class LocationHandler extends React.Component {
     render() {
-      const { location } = this.props
       return (
-        <EnsureResources location={location}>
+        <DataContext.Consumer>
           {({ pageResources, location }) => (
             <RouteUpdates location={location}>
               <ScrollContext
@@ -73,12 +104,14 @@ apiRunnerAsync(`onClientEntry`).then(() => {
                   id="gatsby-focus-wrapper"
                 >
                   <RouteHandler
-                    path={encodeURI(
+                    path={
                       pageResources.page.path === `/404.html`
                         ? stripPrefix(location.pathname, __BASE_PATH__)
-                        : pageResources.page.matchPath ||
-                            pageResources.page.path
-                    )}
+                        : encodeURI(
+                            pageResources.page.matchPath ||
+                              pageResources.page.path
+                          )
+                    }
                     {...this.props}
                     location={location}
                     pageResources={pageResources}
@@ -88,7 +121,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
               </ScrollContext>
             </RouteUpdates>
           )}
-        </EnsureResources>
+        </DataContext.Consumer>
       )
     }
   }
@@ -118,27 +151,24 @@ apiRunnerAsync(`onClientEntry`).then(() => {
   }
 
   publicLoader.loadPage(browserLoc.pathname).then(page => {
-    if (!page || page.status === `error`) {
+    if (!page || page.status === PageResourceStatus.Error) {
       throw new Error(
         `page resources for ${browserLoc.pathname} not found. Not rendering React`
       )
     }
-    const Root = () => (
-      <Location>
-        {locationContext => <LocationHandler {...locationContext} />}
-      </Location>
-    )
 
-    const WrappedRoot = apiRunner(
+    window.___webpackCompilationHash = page.page.webpackCompilationHash
+
+    const SiteRoot = apiRunner(
       `wrapRootElement`,
-      { element: <Root /> },
-      <Root />,
+      { element: <LocationHandler /> },
+      <LocationHandler />,
       ({ result }) => {
         return { element: result }
       }
     ).pop()
 
-    let NewRoot = () => WrappedRoot
+    const App = () => <GatsbyRoot>{SiteRoot}</GatsbyRoot>
 
     const renderer = apiRunner(
       `replaceHydrateFunction`,
@@ -148,7 +178,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
 
     domReady(() => {
       renderer(
-        <NewRoot />,
+        <App />,
         typeof window !== `undefined`
           ? document.getElementById(`___gatsby`)
           : void 0,

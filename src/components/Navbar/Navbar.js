@@ -17,13 +17,10 @@ export default function index() {
         <Menu>
           <ul>
             <li className="logo">
-              <NavLink to="/">MOHAN</NavLink>
+              <NavLink to="/">Fanilo</NavLink>
             </li>
             <li>
               <NavLink to="/projects">See my work</NavLink>
-            </li>
-            <li>
-              <NavLink to="/blog">blog</NavLink>
             </li>
           </ul>
         </Menu>
@@ -37,7 +34,7 @@ export default function index() {
             fontFamily: "Montserrat, sans-serif"
           }}
         >
-          <h2>MOHAN</h2>
+          <h2>FANILO</h2>
         </Link>
       }
     />

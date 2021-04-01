@@ -3,36 +3,11 @@ module.exports = {
     title: `Mohan`,
     description: `A personal portfolio site built with GatsbyJS`,
     author: `mohan.tech`,
-    footerLinks: [
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/sree.dhannu"
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/mohan.houseStark"
-      }
-    ],
+    footerLinks: [],
     socialLinks: [
       {
-        name: "Facebook",
-        url: "https://www.facebook.com/sree.dhannu"
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/mohan.houseStark"
-      },
-      {
-        name: "Twitter",
-        url: "https://www.twitter.com/_MrNullPointer"
-      },
-      {
         name: "Github",
-        url: "https://www.github.com/mohanmonu777"
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/mohanmonu777"
+        url: "https://github.com/lightme-fan"
       }
     ]
   },

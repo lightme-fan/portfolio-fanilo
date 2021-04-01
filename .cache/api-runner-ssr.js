@@ -1,35 +1,29 @@
 var plugins = [{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-remark-images/gatsby-ssr'),
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"gatsby-personal-portfolio","short_name":"mohan's portfolio","start_url":"/","background_color":"#616CAA","theme_color":"#616CAA","display":"minimal-ui","icon":"src/images/code_logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"b4e5d6c336e1f95ea04e4071fcc08fae"},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[{"resolve":"C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-remark-images","id":"28c42f28-53d0-5cae-aad5-aee248175898","name":"gatsby-remark-images","version":"3.11.1","pluginOptions":{"plugins":[],"maxWidth":650,"linkImagesToOriginal":true,"showCaptions":false,"markdownCaptions":false,"sizeByPixelDensity":false,"backgroundColor":"white","quality":50,"withWebp":false,"tracedSVG":false,"loading":"lazy","disableBgImageOnAlpha":false,"disableBgImage":false},"nodeAPIs":["pluginOptionsSchema"],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]},{"resolve":"C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-remark-autolink-headers","id":"c2a85404-f97d-5ac0-848d-e491d7dfdbe3","name":"gatsby-remark-autolink-headers","version":"2.11.0","pluginOptions":{"plugins":[],"offsetY":0,"className":"anchor"},"nodeAPIs":["pluginOptionsSchema"],"browserAPIs":["onInitialClientRender","shouldUpdateScroll"],"ssrAPIs":["onRenderBody"]}],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-external-links","options":{"target":"_blank","rel":"nofollow noopener noreferrer"}},{"resolve":"gatsby-remark-images","options":{"maxWidth":830,"quality":90,"withWebp":true,"linkImagesToOriginal":false}},{"resolve":"gatsby-remark-autolink-headers","options":{"maintainCase":false}}],"extensions":[".mdx"],"defaultLayouts":{},"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"C:\\Users\\Fanilo\\code\\gatsby_starter_portfolio"},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
+      options: {"plugins":[],"offsetY":0,"className":"anchor"},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Minimal Blog - Gatsby Theme","short_name":"MinimalBlog","description":"Minimal Blog with a focus on typography. Gatsby Starter powered by MDX.","background_color":"#FFF","theme_color":"#616CAA","display":"standalone","icon":"src/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"b4e5d6c336e1f95ea04e4071fcc08fae"},
+    },{
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-tech-blog-theme/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-personal-portfolio","short_name":"mohan's portfolio","start_url":"/","background_color":"#616CAA","theme_color":"#616CAA","display":"minimal-ui","icon":"src/images/code_logo.png"},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[{"resolve":"G:/Gatsby/portfolio/node_modules/gatsby-remark-images","id":"3626c0e0-58d4-5046-b0e5-cb7731a052f2","name":"gatsby-remark-images","version":"3.1.20","pluginOptions":{"plugins":[]},"nodeAPIs":[],"browserAPIs":["onRouteUpdate"],"ssrAPIs":["onRenderBody"]},{"resolve":"G:/Gatsby/portfolio/node_modules/gatsby-remark-autolink-headers","id":"df380aaa-460e-51a2-8830-e6712dc1f436","name":"gatsby-remark-autolink-headers","version":"2.1.9","pluginOptions":{"plugins":[]},"nodeAPIs":[],"browserAPIs":["onInitialClientRender","shouldUpdateScroll"],"ssrAPIs":["onRenderBody"]}],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-external-links","options":{"target":"_blank","rel":"nofollow noopener noreferrer"}},{"resolve":"gatsby-remark-images","options":{"maxWidth":830,"quality":90,"withWebp":true,"linkImagesToOriginal":false}},{"resolve":"gatsby-remark-autolink-headers","options":{"maintainCase":false}}]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-remark-images/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Minimal Blog - Gatsby Theme","short_name":"MinimalBlog","description":"Minimal Blog with a focus on typography. Gatsby Starter powered by MDX.","background_color":"#FFF","theme_color":"#616CAA","display":"standalone","icon":"src/favicon.png"},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
-      options: {"plugins":[]},
-    },{
-      plugin: require('G:/Gatsby/portfolio/node_modules/gatsby-tech-blog-theme/gatsby-ssr'),
+      plugin: require('C:/Users/Fanilo/code/gatsby_starter_portfolio/node_modules/gatsby-tech-blog-theme/gatsby-ssr'),
       options: {"plugins":[],"basePath":"/blog","contentPath":"content/blog"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
