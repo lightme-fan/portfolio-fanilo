@@ -10,7 +10,7 @@ export default function Footer() {
         marginTop: "20px"
       }}
     >
-      © 2019 | Created and Presented with 💙 by <a href="https://www.">Fanilo</a>
+      {/* © 2019 | Created and Presented with 💙 by <a href="https://www.">Fanilo</a> */}
     </footer>
   );
 }
