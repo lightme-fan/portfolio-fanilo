@@ -1,4 +1,4 @@
-# Gatsby Starter Portfolio: A Gatsby Starter
+# My Portfolio
 
 ## About Me
 
