@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const ResponsiveImage = styled(Img)`
   width: 100%;
+  border-radius: 50%;
 `;
 
 const Wrapper = styled.figure`
@@ -18,7 +19,7 @@ const WrappedImg = props => <Wrapper>{props.children}</Wrapper>;
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "profile-photo.png" }) {
+      placeholderImage: file(relativePath: { eq: "fanilo-profile.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
