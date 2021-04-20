@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Mohan`,
+    title: `Fanilo`,
     description: `A personal portfolio site built with GatsbyJS`,
-    author: `mohan.tech`,
+    author: `Fanilo.tech`,
     footerLinks: [],
     socialLinks: [
       {

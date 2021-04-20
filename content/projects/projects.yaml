@@ -9,7 +9,7 @@
     - SCSS
 
 - title: Birthday app
-  description: This is an app that help people remember their birthday. This is built with vanilla js.
+  description: This is a CRUD app that helps people remember their birthday. This app is built with vanilla js.
   cover: birthday.png
   demo: https://fanilo-birthday-app.netlify.app/
   repo: https://github.com/lightme-fan/birthday-app
@@ -18,7 +18,7 @@
     - Vanilla js
 
 - title: Country quiz
-  description: This is an app that test people how much they know about the world. This is built with react hooks.
+  description: This is a quiz app that tests people how much they know about the world. This app is built with react hooks.
   cover: countryQuiz.png
   demo: https://lightme-fan-country-quiz.netlify.app/
   repo: https://github.com/lightme-fan/country-quiz
