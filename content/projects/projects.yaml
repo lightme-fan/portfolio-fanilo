@@ -3,7 +3,7 @@
   cover: photograph.png
   demo: https://fanilo-photograph.netlify.app/
   repo: https://github.com/lightme-fan/front-end-finals
-  date: Sep 5, 2020
+  date: Sep, 2020
   tags:
     - HTML
     - SCSS
@@ -13,7 +13,7 @@
   cover: birthday.png
   demo: https://fanilo-birthday-app.netlify.app/
   repo: https://github.com/lightme-fan/birthday-app
-  date: Oct 1, 2020
+  date: Oct, 2020
   tags:
     - Vanilla js
 
@@ -22,6 +22,6 @@
   cover: countryQuiz.png
   demo: https://lightme-fan-country-quiz.netlify.app/
   repo: https://github.com/lightme-fan/country-quiz
-  date: Nov 13, 2020
+  date: Nov, 2020
   tags:
     - React hooks
