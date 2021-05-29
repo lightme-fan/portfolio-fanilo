@@ -1,16 +1,15 @@
-import React from "react";
+import React from 'react'
 
 export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: "#F1F3F4",
-        padding: "15px",
-        textAlign: "center",
-        marginTop: "20px"
-      }}
-    >
-      {/* © 2019 | Created and Presented with 💙 by <a href="https://www.">Fanilo</a> */}
+        backgroundColor: '#F1F3F4',
+        padding: '15px',
+        textAlign: 'center',
+        marginTop: '20px',
+      }}>
+      © Created and Presented with 💙 by <a href='#fanilo'>Fanilo</a>
     </footer>
-  );
+  )
 }

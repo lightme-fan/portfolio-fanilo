@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const PageGrid = styled.div`
   .grid-container {
     display: grid;
-    grid-template-columns: ${props => props.columns || "repeat(3, 1fr)"};
+    grid-template-columns: ${(props) => props.columns || 'repeat(3, 1fr)'};
     grid-gap: 30px;
-    align-items: ${({center}) => center && "center"};
-    height: ${({height}) => height};
+    align-items: ${({ center }) => center && 'center'};
+    height: ${({ height }) => height};
   }
 
   .grid-item {
@@ -30,6 +30,6 @@ const PageGrid = styled.div`
     }
   `}
   }
-`;
+`
 
-export default PageGrid;
+export default PageGrid

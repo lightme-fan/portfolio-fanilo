@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const ResponsiveImage = styled(Img)`
   width: 100%;
   border-radius: 50%;
+  max-width: 210px;
 `
 
 const Wrapper = styled.figure`
