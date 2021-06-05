@@ -5,7 +5,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-caches-gatsby-plugin-offline-app-shell-js": hot(preferDefault(require("/home/student/Coding/projects/portfolio-fanilo/.cache/caches/gatsby-plugin-offline/app-shell.js"))),
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/home/student/Coding/projects/portfolio-fanilo/.cache/dev-404-page.js"))),
   "component---node-modules-gatsby-tech-blog-theme-src-components-search-js": hot(preferDefault(require("/home/student/Coding/projects/portfolio-fanilo/node_modules/gatsby-tech-blog-theme/src/components/Search.js"))),
   "component---node-modules-gatsby-tech-blog-theme-src-templates-categories-query-js": hot(preferDefault(require("/home/student/Coding/projects/portfolio-fanilo/node_modules/gatsby-tech-blog-theme/src/templates/categories-query.js"))),
   "component---node-modules-gatsby-tech-blog-theme-src-templates-category-js": hot(preferDefault(require("/home/student/Coding/projects/portfolio-fanilo/node_modules/gatsby-tech-blog-theme/src/templates/category.js"))),

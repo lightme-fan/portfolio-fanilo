@@ -19,13 +19,15 @@
     "gatsby-transformer-remark": "^2.6.20",
     "gatsby-transformer-sharp": "^2.2.7",
     "gatsby-transformer-yaml": "^2.2.8",
+    "kill-port": "^1.6.1",
     "parcel-bundler": "^1.12.5",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -40,7 +42,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve"
   }
 }
