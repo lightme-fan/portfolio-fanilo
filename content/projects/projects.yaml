@@ -1,11 +1,12 @@
 - title: Photograf
   description: This is a landing a page which is built with html and SCSS and compiled to pure css.
   cover: photograph.png
-  demo: https://fanilo-photograph.netlify.app/
+  demo: https://fanilo-photograf.netlify.app/
   repo: https://github.com/lightme-fan/front-end-finals
   date: Sep, 2020
   tags:
     - HTML
+    - CSS
     - SCSS
 
 - title: Birthday app

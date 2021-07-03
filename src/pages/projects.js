@@ -1,11 +1,11 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
-import Layout from "../components/Layout";
-import styled from "styled-components";
-import Heading from "../components/Typography/Heading";
-import Description from "../components/Typography/Description";
-import PageGrid from "../components/Responsive/PageGrid";
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../components/Layout'
+import styled from 'styled-components'
+import Heading from '../components/Typography/Heading'
+import Description from '../components/Typography/Description'
+import PageGrid from '../components/Responsive/PageGrid'
 
 const Button = styled.a`
   padding: 5px 20px;
@@ -21,34 +21,40 @@ const Button = styled.a`
     background: #616caa;
     color: #fff;
   }
-`;
+`
 
 const Item = styled.span`
   margin-right: 5px;
   color: #616caa;
   font-style: italic;
-`;
+`
+
+const Date = styled.div`
+  margin: 22px 0;
+`
 
 export default function projects({ data }) {
   return (
     <Layout>
       <PageGrid>
-        <div className="grid-container">
+        <div className='grid-container'>
           {data &&
             data.allProjectsYaml.edges.map(({ node }) => (
-              <div className="grid-item">
-                <Img fluid={node.cover.childImageSharp.fluid} />
-                <Heading size="24px" height="33px" weight="400">
+              <div className='grid-item' key={node.title}>
+                <Img
+                  className='project-image'
+                  fluid={node.cover.childImageSharp.fluid}
+                />
+                <Heading size='24px' height='33px' weight='400'>
                   {node.title}
                 </Heading>
-                📅 {node.date}
-                <Description size="18px" height="25px">
+                <Date>📅 {node.date}</Date>
+                <Description size='18px' height='25px'>
                   {node.description}
-
                   <p>
-                    ️️Built with{" "}
-                    {node.tags.map(tag => (
-                      <Item>{tag}</Item>
+                    ️️Built with{' '}
+                    {node.tags.map((tag) => (
+                      <Item key={tag}>{tag}</Item>
                     ))}
                   </p>
                 </Description>
@@ -59,7 +65,7 @@ export default function projects({ data }) {
         </div>
       </PageGrid>
     </Layout>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -84,4 +90,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

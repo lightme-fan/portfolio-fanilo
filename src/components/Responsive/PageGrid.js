@@ -11,6 +11,19 @@ const PageGrid = styled.div`
 
   .grid-item {
     margin-bottom: 20px;
+    .project-image {
+      max-height: 272px;
+    }
+  }
+  .grid-item:nth-of-type(2) {
+    margin-bottom: 116px;
+    .project-image {
+      max-height: 242px;
+    }
+
+    @media (min-width: 700px) {
+      margin-bottom: 45px;
+    }
   }
 
   @media (max-width: 500px) {

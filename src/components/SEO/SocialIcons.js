@@ -1,17 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react'
+import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
 import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
   FaGithub,
-  FaLinkedin
-} from "react-icons/fa";
+  FaLinkedin,
+} from 'react-icons/fa'
 
 const IconGroup = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 24px;
 
   a {
     color: #616caa;
@@ -25,7 +26,7 @@ const IconGroup = styled.div`
       transform: scale(1.2);
     }
   }
-`;
+`
 
 export default function SocialIcons() {
   const data = useStaticQuery(graphql`
@@ -39,7 +40,7 @@ export default function SocialIcons() {
         }
       }
     }
-  `);
+  `)
 
   return (
     <IconGroup>
@@ -49,28 +50,28 @@ export default function SocialIcons() {
         </a>
       ))}
     </IconGroup>
-  );
+  )
 }
 
 const Icon = ({ name }) => {
   switch (name) {
-    case "Facebook":
-      return <FaFacebook />;
-      break;
-    case "Github":
-      return <FaGithub />;
-      break;
-    case "Twitter":
-      return <FaTwitter />;
-      break;
-    case "Instagram":
-      return <FaInstagram />;
-      break;
-    case "LinkedIn":
-      return <FaLinkedin />;
-      break;
+    case 'Facebook':
+      return <FaFacebook />
+      break
+    case 'Github':
+      return <FaGithub />
+      break
+    case 'Twitter':
+      return <FaTwitter />
+      break
+    case 'Instagram':
+      return <FaInstagram />
+      break
+    case 'LinkedIn':
+      return <FaLinkedin />
+      break
 
     default:
-      break;
+      break
   }
-};
+}

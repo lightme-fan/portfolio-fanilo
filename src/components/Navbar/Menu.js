@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Menu = styled.div`
   ul {
     padding: 0;
+    margin-bottom: 0;
   }
   .logo {
     float: left;
@@ -10,7 +11,7 @@ const Menu = styled.div`
     a {
       color: #000;
       font-weight: 700;
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Montserrat', sans-serif;
       border-bottom: 2px dashed #616caa;
     }
   }
@@ -42,6 +43,6 @@ const Menu = styled.div`
       display: none;
     }
   }
-`;
+`
 
-export default Menu;
+export default Menu
