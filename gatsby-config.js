@@ -6,10 +6,10 @@ module.exports = {
     footerLinks: [],
     socialLinks: [
       {
-        name: "Github",
-        url: "https://github.com/lightme-fan"
-      }
-    ]
+        name: 'Github',
+        url: 'https://github.com/lightme-fan',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,42 +19,40 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-images`
-        ]
-      }
+        plugins: [`gatsby-remark-images`],
+      },
     },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {}
+      options: {},
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/content/projects`
-      }
+        path: `${__dirname}/content/projects`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/content/pages`
-      }
+        path: `${__dirname}/content/pages`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/content/blog`
-      }
+        path: `${__dirname}/content/blog`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -65,15 +63,15 @@ module.exports = {
         background_color: `#616CAA`,
         theme_color: `#616CAA`,
         display: `minimal-ui`,
-        icon: `src/images/code_logo.png` // This path is relative to the root of the site.
-      }
+        icon: `src/favicon.png`, // This path is relative to the root of the site.
+      },
     },
     {
-      resolve: "gatsby-tech-blog-theme",
-      options:{
-        basePath: "/blog",
-        contentPath: "content/blog",
-      }
-    }
-  ]
-};
+      resolve: 'gatsby-tech-blog-theme',
+      options: {
+        basePath: '/blog',
+        contentPath: 'content/blog',
+      },
+    },
+  ],
+}
