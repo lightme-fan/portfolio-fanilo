@@ -1,28 +1,41 @@
 - title: Photograf
-  description: This is a landing a page which is built with html and SCSS and compiled to pure css.
+  description: This is a landing page that I developed from scratch in order to practice using HTML, CSS and Sass.
   cover: photograph.png
   demo: https://fanilo-photograf.netlify.app/
   repo: https://github.com/lightme-fan/front-end-finals
   date: Sep, 2020
   tags:
-    - HTML
-    - CSS
+    - HTML,
+    - CSS,
     - SCSS
 
 - title: Birthday app
-  description: This is a CRUD app that helps people remember their birthday. This app is built with vanilla js.
+  description: A CRUD app that lists people with their profile photos and birthdays. I built this app from scratch with HTML, CSS and Vanilla Js.
   cover: birthday.png
   demo: https://fanilo-birthday-app.netlify.app/
   repo: https://github.com/lightme-fan/birthday-app
   date: Oct, 2020
   tags:
+    - HTML,
+    - CSS,
     - Vanilla js
 
 - title: Country quiz
-  description: This is a quiz app that tests people how much they know about the world. This app is built with react hooks.
+  description: A quiz app that allows the user to guess a country from a given capital. This app is built in order to practice using React and a state manager called Custom hooks.
   cover: countryQuiz.png
   demo: https://lightme-fan-country-quiz.netlify.app/
   repo: https://github.com/lightme-fan/country-quiz
   date: Nov, 2020
   tags:
-    - React hooks
+    - React,
+    - Custom hooks
+
+- title: Chuck Norris Random Joke
+  description: A web app that lets the user to see and search a random joke from Chuck Norris. I developed this app from scratch which was built to practice using CSS, React typescript and Context API as a state manager.
+  cover: randomJoke.png
+  demo: https://chuck-norris-random-joke-fanilo.netlify.app/
+  repo: https://github.com/lightme-fan/random-joke-react-typescript
+  date: July, 2021
+  tags:
+    - React Typescript,
+    - Context API

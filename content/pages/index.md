@@ -2,4 +2,6 @@
 page: Index
 heading: Hello There!
 ---
-I am Fanilo. I am a web developer from Onja Madagascar and focus on front-end development. I always love learning new skills and getting my hands dirty.
+
+I am Fanilo and love creating useful stuff. I am a front-end developer Onja Madagascar which is an organisation.
+I am self-motivated and keen to learn new skills including coding and languages.

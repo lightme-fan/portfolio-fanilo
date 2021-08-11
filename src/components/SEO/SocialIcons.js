@@ -1,13 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 const IconGroup = styled.div`
   padding-top: 10px;
@@ -55,22 +49,8 @@ export default function SocialIcons() {
 
 const Icon = ({ name }) => {
   switch (name) {
-    case 'Facebook':
-      return <FaFacebook />
-      break
     case 'Github':
       return <FaGithub />
-      break
-    case 'Twitter':
-      return <FaTwitter />
-      break
-    case 'Instagram':
-      return <FaInstagram />
-      break
-    case 'LinkedIn':
-      return <FaLinkedin />
-      break
-
     default:
       break
   }
