@@ -21,7 +21,7 @@
     - Vanilla js
 
 - title: Country quiz
-  description: A quiz app that allows the user to guess a country from a given capital. This app is built in order to practice using React and a state manager called Custom hooks.
+  description: A quiz app that allows the user to guess a country from a given capital. This app is built React and a state manager called Custom hooks.
   cover: countryQuiz.png
   demo: https://lightme-fan-country-quiz.netlify.app/
   repo: https://github.com/lightme-fan/country-quiz
