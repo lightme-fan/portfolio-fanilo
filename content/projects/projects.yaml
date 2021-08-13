@@ -31,11 +31,12 @@
     - Custom hooks
 
 - title: Chuck Norris Random Joke
-  description: A web app that lets the user to see and search a random joke from Chuck Norris. I developed this app from scratch which was built to practice using CSS, React typescript and Context API as a state manager.
+  description: A web app that lets the user to see and search a random joke from Chuck Norris. I developed this app from scratch which was built to practice using Style-components, React typescript and Context API as a state manager.
   cover: randomJoke.png
   demo: https://chuck-norris-random-joke-fanilo.netlify.app/
   repo: https://github.com/lightme-fan/random-joke-react-typescript
   date: July, 2021
   tags:
+    - Style-components,
     - React Typescript,
     - Context API
