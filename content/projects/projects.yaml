@@ -1,5 +1,6 @@
 - title: Photograf
   description: This is a landing page that I developed from scratch in order to practice using HTML, CSS and Sass.
+
   cover: photograph.png
   demo: https://fanilo-photograf.netlify.app/
   repo: https://github.com/lightme-fan/front-end-finals
@@ -11,6 +12,7 @@
 
 - title: Birthday app
   description: A CRUD app that lists people with their profile photos and birthdays. I built this app from scratch with HTML, CSS and Vanilla Js.
+
   cover: birthday.png
   demo: https://fanilo-birthday-app.netlify.app/
   repo: https://github.com/lightme-fan/birthday-app
@@ -21,7 +23,7 @@
     - Vanilla js
 
 - title: Country quiz
-  description: A quiz app that allows the user to guess a country from a given capital. This app is built React and a state manager called Custom hooks.
+  description: A quiz app that allows the user to guess a country from a given capital. This app is built with React and Custom hooks as a state manager.
   cover: countryQuiz.png
   demo: https://lightme-fan-country-quiz.netlify.app/
   repo: https://github.com/lightme-fan/country-quiz
@@ -31,7 +33,7 @@
     - Custom hooks
 
 - title: Chuck Norris Random Joke
-  description: A web app that lets the user to see and search a random joke from Chuck Norris. I developed this app from scratch which was built to practice using Style-components, React typescript and Context API as a state manager.
+  description: A web app that lets the user see and search a random joke from Chuck Norris. I developed this app from scratch and it was built to practice using Style-components, React typescript and Context API as a state manager.
   cover: randomJoke.png
   demo: https://chuck-norris-random-joke-fanilo.netlify.app/
   repo: https://github.com/lightme-fan/random-joke-react-typescript
