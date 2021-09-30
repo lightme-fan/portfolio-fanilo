@@ -43,12 +43,12 @@
     - React Typescript,
     - Context API
 
-- title: Rest Countries
-  description: This is a website that shows a list of countries and allows the users to search a country by the country name. This was developed from scratch and build with React, Typescript and Styled-component.
-  cover: restCountry.png
-  demo: https://rest-countries-fanilo.netlify.app/
-  repo: https://github.com/lightme-fan/rest-countries-ts.git
-  date: March, 2021 and updated Sep, 2021
-  tags:
-    - Style-components,
-    - React Typescript,
+# - title: Rest Countries
+#   description: This is a website that shows a list of countries and allows the users to search a country by the country name. This was developed from scratch and build with React, Typescript and Styled-component.
+#   cover: restCountry.png
+#   demo: https://rest-countries-fanilo.netlify.app/
+#   repo: https://github.com/lightme-fan/rest-countries-ts.git
+#   date: March, 2021 and updated Sep, 2021
+#   tags:
+#     - Style-components,
+#     - React Typescript,
