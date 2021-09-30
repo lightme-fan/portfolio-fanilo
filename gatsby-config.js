@@ -9,6 +9,10 @@ module.exports = {
         name: 'Github',
         url: 'https://github.com/lightme-fan',
       },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/FAndriamarohaja',
+      },
     ],
   },
   plugins: [
