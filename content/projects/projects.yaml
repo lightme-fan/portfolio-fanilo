@@ -43,12 +43,13 @@
     - React Typescript,
     - Context API
 
-# - title: Rest Countries
-#   description: This is a website that shows a list of countries and allows the users to search a country by the country name. This was developed from scratch and build with React, Typescript and Styled-component.
-#   cover: restCountry.png
-#   demo: https://rest-countries-fanilo.netlify.app/
-#   repo: https://github.com/lightme-fan/rest-countries-ts.git
-#   date: March, 2021 and updated Sep, 2021
-#   tags:
-#     - Style-components,
-#     - React Typescript,
+- title: Tic Tac Toe
+  description: This is a game that two players can play against each other. This game was built with react, typescript and styled-components.
+  cover: ticTacToe.png
+  demo: https://fanilo-tic-tac-toe.netlify.app/
+  repo: https://github.com/lightme-fan/tic-tac-toe
+  date: September, 2021
+  tags:
+    - Style-components,
+    - React Typescript,
+      - Redux toolkit(slice)
