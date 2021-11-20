@@ -13,15 +13,13 @@ const PageGrid = styled.div`
     margin-bottom: 20px;
     .project-image {
       max-height: 272px;
+      height: 242px;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 7px;
     }
   }
-  .grid-item:nth-of-type(2) {
-    margin-bottom: 116px;
-    .project-image {
-      max-height: 242px;
-    }
-
-    @media (min-width: 700px) {
+    
+  @media (min-width: 700px) {
       margin-bottom: 45px;
     }
   }
