@@ -12,5 +12,4 @@ const NavLink = ({ to, children }) => (
   </Link>
 );
 
-
 export default NavLink;

@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import React from "react";
+import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 
 const IconGroup = styled.div`
   padding-top: 10px;
@@ -20,7 +20,7 @@ const IconGroup = styled.div`
       transform: scale(1.2);
     }
   }
-`
+`;
 
 export default function SocialIcons() {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ export default function SocialIcons() {
         }
       }
     }
-  `)
+  `);
 
   return (
     <IconGroup>
@@ -44,16 +44,16 @@ export default function SocialIcons() {
         </a>
       ))}
     </IconGroup>
-  )
+  );
 }
 
 const Icon = ({ name }) => {
   switch (name) {
-    case 'Github':
-      return <FaGithub />
-    case 'Twitter':
-      return <FaTwitter />
+    case "Github":
+      return <FaGithub />;
+    case "Twitter":
+      return <FaTwitter />;
     default:
-      break
+      break;
   }
-}
+};

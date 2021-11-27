@@ -1,1 +1,12 @@
-{"data":{"site":{"siteMetadata":{"title":"Mohan","url":"","description":"A personal portfolio site built with GatsbyJS","author":"@mohan.tech"}}}}
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "title": "Mohan",
+        "url": "",
+        "description": "A personal portfolio site built with GatsbyJS",
+        "author": "@mohan.tech"
+      }
+    }
+  }
+}

@@ -24,10 +24,18 @@ const FlexBox = styled.div`
   align-items: center;
 `;
 
+const IconBtn = styled.button`
+  border: none;
+  outline: none;
+  background: none;
+
+  & > svg {
+    cursor: pointer;
+  }
+`;
+
 const MenuIcon = ({ onClick, icon }) => (
-  <div role="button" onClick={onClick}>
-    {icon}
-  </div>
+  <IconBtn onClick={onClick}>{icon}</IconBtn>
 );
 
 function ResponsiveMenu(props) {

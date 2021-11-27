@@ -1,1 +1,1 @@
-require('./global.css')
+require("./global.css");
