@@ -16,7 +16,7 @@
 - Contact links:
     - [Github](https://github.com/lightme-fan)
     - [Twitter](https://twitter.com/FAndriamarohaja)
-- A "See my work" page that displays a few projects that I have built,
+- A "See my work" page that displays a few projects that I have built:
     - Photograph Gallery
     - Country Quiz
     - Birthday App
