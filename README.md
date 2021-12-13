@@ -13,9 +13,6 @@
 
 ## Features
 - A home page with a short description about me and my profile photo.
-- Contact links:
-    - [Github](https://github.com/lightme-fan)
-    - [Twitter](https://twitter.com/FAndriamarohaja)
 - A "See my work" page that displays a few projects that I have built:
     - Photograph Gallery
     - Country Quiz
@@ -29,6 +26,6 @@
     2- npm install gatsby
     3- gatsby develop
 
-### Build
-
-This portfolio is built with gatsby
+## Contact links:
+   - [Github](https://github.com/lightme-fan)
+   - [Twitter](https://twitter.com/FAndriamarohaja)
